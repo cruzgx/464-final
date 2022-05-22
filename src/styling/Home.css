@@ -1,0 +1,12 @@
+/* .home-container {
+    background-color: rgb(247, 247, 220);
+} */
+
+#home-header {
+    text-align: center;
+}
+
+.home-button {
+    display: flex;
+    justify-content: center;
+}
