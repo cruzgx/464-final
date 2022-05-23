@@ -2,21 +2,20 @@ import React from "react";
 import  Carousel  from "react-bootstrap/Carousel";
 import Button from 'react-bootstrap/Button'
 import '../styling/Home.css'
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
 
   return (
     <div className="home-container">
-      <br/>
+      
       <h1 id="home-header">All on Plants!</h1>
        
-      <div className="home-button">
-        <Button variant="primary" text>Find out more!</Button>{' '}
-      </div>
+      
       <br/>
 
-      <Carousel variant="dark">
+      <Carousel variant="dark" interval={3000}>
       <Carousel.Item>
           <img
             className="d-block w-100"
@@ -56,6 +55,14 @@ const Home = () => {
         </Carousel.Item>
         
       </Carousel>
+      
+      <br/> <br/>
+      <div className="home-button">
+        <Link to='/contact'>
+          <Button variant="primary" text>Find out more!</Button>{' '}
+        </Link>
+      </div>
+
     </div>
   );
 };
