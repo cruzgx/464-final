@@ -1,18 +1,21 @@
 // import logo from './logo.svg';
 // import './App.css';
-import {NavigationBar}  from './components/NavigationBar';
+// import {NavigationBar}  from './components/NavigationBar';
 import React from 'react';
 import {Routes, Route} from 'react-router-dom'; 
 import { Layout } from './components/Layout';
 import Home from './pages/Home';
 import Bio from './pages/Bio';
 import Contact from './pages/Contact';
+import NavigationBar from './components/NavigationBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 function App() {
   return (
     <>
-      <NavigationBar />
+      <NavigationBar/>
       <Layout>
         <Routes>
           <Route path='/' element={<Home />} />
